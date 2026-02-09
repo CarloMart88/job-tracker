@@ -1,0 +1,13 @@
+import { Link } from 'react-router-dom';
+import Button from '../components/ui/Button';
+import styles from './NotFound.module.scss';
+
+export default function NotFound() {
+  return (
+    <div className={styles.page}>
+      <h1>404</h1>
+      <p>Page not found</p>
+      <Link to="/"><Button>Go to Dashboard</Button></Link>
+    </div>
+  );
+}
