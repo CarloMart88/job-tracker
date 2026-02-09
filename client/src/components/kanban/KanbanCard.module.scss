@@ -1,0 +1,49 @@
+@use '../../styles/variables' as *;
+
+.card {
+  background: $bg-card;
+  border: 1px solid $border;
+  border-radius: $radius;
+  padding: 0.75rem;
+  cursor: grab;
+  transition: box-shadow $transition;
+  touch-action: none;
+
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.dragging {
+  box-shadow: $shadow-lg;
+  opacity: 0.9;
+  rotate: 2deg;
+}
+
+.company {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: $text;
+  display: block;
+  margin-bottom: 0.25rem;
+
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+  }
+}
+
+.position {
+  font-size: 0.8125rem;
+  color: $text-light;
+  margin-bottom: 0.375rem;
+}
+
+.date {
+  font-size: 0.75rem;
+  color: $text-light;
+}
