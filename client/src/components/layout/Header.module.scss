@@ -1,0 +1,24 @@
+@use '../../styles/variables' as *;
+
+.header {
+  height: $header-height;
+  background: $bg-card;
+  border-bottom: 1px solid $border;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: $primary;
+  font-weight: 700;
+}
+
+.search {
+  width: 320px;
+}

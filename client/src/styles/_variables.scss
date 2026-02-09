@@ -1,0 +1,43 @@
+// Colors
+$primary: #4f46e5;
+$primary-light: #818cf8;
+$primary-dark: #3730a3;
+
+$bg: #f8fafc;
+$bg-card: #ffffff;
+$bg-sidebar: #1e293b;
+
+$text: #1e293b;
+$text-light: #64748b;
+$text-white: #f8fafc;
+
+$border: #e2e8f0;
+$border-focus: $primary;
+
+// Status colors
+$status-sent: #3b82f6;
+$status-interview: #f59e0b;
+$status-offer: #10b981;
+$status-rejected: #ef4444;
+
+// Spacing
+$sidebar-width: 240px;
+$header-height: 64px;
+$radius: 8px;
+$radius-sm: 4px;
+$radius-lg: 12px;
+
+// Shadows
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+
+// Breakpoints
+$bp-sm: 640px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+
+// Transitions
+$transition: 0.2s ease;

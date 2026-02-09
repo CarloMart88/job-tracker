@@ -1,0 +1,45 @@
+@use '../../styles/variables' as *;
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  left: 0.75rem;
+  color: $text-light;
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem 2rem 0.5rem 2.25rem;
+  border: 1px solid $border;
+  border-radius: $radius;
+  font-size: 0.875rem;
+  background: $bg-card;
+  color: $text;
+  transition: border-color $transition;
+
+  &:focus {
+    outline: none;
+    border-color: $border-focus;
+    box-shadow: 0 0 0 3px rgba($primary, 0.1);
+  }
+
+  &::placeholder { color: $text-light; }
+}
+
+.clear {
+  position: absolute;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: $text-light;
+  line-height: 1;
+
+  &:hover { color: $text; }
+}

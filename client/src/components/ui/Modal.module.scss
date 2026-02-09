@@ -1,0 +1,46 @@
+@use '../../styles/variables' as *;
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal {
+  background: $bg-card;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-lg;
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid $border;
+
+  h3 { margin: 0; }
+}
+
+.close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: $text-light;
+  line-height: 1;
+
+  &:hover { color: $text; }
+}
+
+.body {
+  padding: 1.5rem;
+}

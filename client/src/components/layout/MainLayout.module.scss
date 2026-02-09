@@ -1,0 +1,21 @@
+@use '../../styles/variables' as *;
+
+.layout {
+  min-height: 100vh;
+}
+
+.body {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 1.5rem;
+  min-height: calc(100vh - $header-height);
+  max-width: calc(100% - $sidebar-width);
+  overflow-x: hidden;
+
+  @media (max-width: $bp-md) {
+    max-width: 100%;
+  }
+}
