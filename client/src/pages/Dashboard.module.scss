@@ -1,0 +1,53 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+  @include respond-to(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond-to(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @include respond-to(lg) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chartCard {
+  @include card;
+  padding: 1.25rem;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+}
+
+.activityCard {
+  @include card;
+  padding: 1.25rem;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+}
